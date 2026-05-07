@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJM Visuals - Portrait Drawing Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">✏️ AJMPortrait Studio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capture Your Essence</h1>
+            <p> Portrait Drawings That Tell Your Story</p>
+            <a href="#contact" class="cta-button">Commission a Portrait</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Recent Works</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Portrait 1</div>
+                    <h3>Graphite Portrait</h3>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Portrait 2</div>
+                    <h3>Graphite Portrait</h3>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Portrait 3</div>
+                    <h3>Graphite Portrait</h3>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-placeholder">Portrait 4</div>
+                    <h3>Graphite Portrait</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Individual Portraits</h3>
+                    <p>Beautiful hand-drawn portraits capturing your unique character and personality.</p>
+                    <p class="price">Starting at PHP.250</p>
+                </div>
+                <div class="service-card">
+                    <h3>Family Portraits</h3>
+                    <p>Custom group portraits perfect for displaying in your home or giving as gifts.</p>
+                    <p class="price">Starting at PHP.500</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pet Portraits</h3>
+                    <p>Commemorate your beloved pets with detailed, lifelike portrait drawings.</p>
+                    <p class="price">Starting at PHP.250</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Commissions</h3>
+                    <p>Work with us on any custom project using your photos or ideas.</p>
+                    <p class="price">Contact for quote</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Welcome to AJM Visuals. I specialize in hand-drawn portraits that capture character, personality, and soul.
+As a student-artist, I’ve turned my passion for sketching into a mission to support my family and my education. Whether you need a unique gift, a timeless family portrait, or a professional custom piece, I am dedicated to delivering art that resonates. Your support makes a world of difference. Let’s bring your ideas to life! ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Visit My Accounts</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="mailto:aaronmansueto847@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Tell me about your portrait idea..." rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p><strong>Email:</strong> aaronmansueto847@gmail.com</p>
+                    <p><strong>Phone:</strong> 0991 755 5899</p>
+                    <p><strong>Location:</strong> Mandaue City, Cebu</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aaron_jemsz?igsh=cHZiZHRremNnMGps" class="social-link" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/share/1Lo6RkHz5W/" class="social-link" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AJM Visuals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission
+        const form = document.querySelector('.contact-form');
+        form.addEventListener('submit', function(e) {
+            // Show success message before opening email client
+            alert('Opening your email client to send the message...');
+            // The mailto: action will open the email client
+        });
+    </script>
+</body>
+</html>
